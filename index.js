@@ -10,7 +10,7 @@ app.get("/",(req,res)=>{
 });
 
 app.get("/data",(req,res)=>{
-    res.send(data)
+    res.sendFile(__dirname+"/data.json")
 })
 
 app.listen(port,
