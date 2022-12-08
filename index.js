@@ -6,7 +6,7 @@ const port = process.env.PORT || 3000;
 app.use(cors());
 
 app.get("/",(req,res)=>{
-    res.send("I am live")
+    res.sendFile(__dirname+"/index.html")
 });
 
 app.get("/data",(req,res)=>{
